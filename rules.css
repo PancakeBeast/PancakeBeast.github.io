@@ -1,0 +1,7 @@
+#rules div div:nth-child(2) p span { 
+color: red;
+}
+#rules div div::first-letter{ 
+color:yellow;
+font-size: 2em;
+}

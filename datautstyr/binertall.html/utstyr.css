@@ -1,0 +1,12 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#main div
+{
+  background: red;
+  width: 20em;
+  height: 20em;  
+ }

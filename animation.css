@@ -1,0 +1,19 @@
+#dot {
+position: absolute;
+left: 0;
+top: 0;
+width: 10%;
+height: 10%;
+background: url("dot.png");
+background-size: contain;
+background-repeat: no-repeat;
+animation: mov 5s linear infinite
+}
+
+@keyframes mov {
+0% {top:90%; left:0%;}
+25% {top:90%; left:90%;}   
+50% {top:10%; left:90%} 
+75% {top:10%; left:0%}
+100%{top:90%; left:0%;}
+}

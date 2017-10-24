@@ -1,0 +1,51 @@
+#boks {
+
+position: absolute;
+left: 15%;
+bottom: 0%;
+cursor: crosshair;
+width: 20%;
+height: 40%;
+background: palevioletred;
+}
+#box {
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+    cursor: wait;
+    width: 35%;
+    height: 30%;
+    background: yellowgreen;
+}
+table, th, td {
+    border: 1px solid black;
+    }
+table {
+    padding: 2px
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  * {box-sizing: border-box;}
+  
+  .wrapper {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: red;
+  }
+  
+  .wrapper > div {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: red;
+    padding: 1em;
+    color: black;
+  }
+  
+  .nested {
+    border: 2px solid #ffec99;
+    border-radius: 5px;
+    background-color: #fff9db;
+    }
