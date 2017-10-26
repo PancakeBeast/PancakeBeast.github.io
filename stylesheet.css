@@ -1,15 +1,19 @@
-#boks {
 
+#boks {
+overflow: hidden;
 position: absolute;
+size: relative;
 left: 15%;
 bottom: 0%;
 cursor: crosshair;
 width: 20%;
-height: 40%;
+height: 28%;
 background: palevioletred;
 }
 #box {
+    overflow: hidden;    
     position: absolute;
+    size: relative;
     left: 40%;
     bottom: 0%;
     cursor: wait;
