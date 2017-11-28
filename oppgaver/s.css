@@ -1,0 +1,8 @@
+::first-letter {color:green;}
+
+p::first-line {
+    color: blue;
+ }
+ 
+ 
+  

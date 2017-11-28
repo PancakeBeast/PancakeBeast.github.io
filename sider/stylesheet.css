@@ -1,6 +1,6 @@
 
 #boks {
-overflow: hidden;
+overflow: scroll;
 position: absolute;
 size: relative;
 left: 15%;
@@ -10,8 +10,9 @@ width: 20%;
 height: 28%;
 background: palevioletred;
 }
+
 #box {
-    overflow: hidden;    
+    overflow: scroll;    
     position: absolute;
     size: relative;
     left: 40%;
@@ -21,26 +22,43 @@ background: palevioletred;
     height: 30%;
     background: yellowgreen;
 }
+
 table, th, td {
     border: 1px solid black;
     }
 table {
     padding: 2px
 }
+   
+::first-letter {color:green;}
+::first-letter { 
+    color:green
+}
+p::first-line {
+    color: blue;
+ }
+
+
+   
+    
+ 
 
 .wrapper {
+    overflow: scroll;  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   * {box-sizing: border-box;}
   
   .wrapper {
+    
     border: 2px solid black;
     border-radius: 5px;
     background-color: red;
   }
   
   .wrapper > div {
+ 
     border: 2px solid black;
     border-radius: 5px;
     background-color: red;
@@ -49,6 +67,7 @@ table {
   }
   
   .nested {
+    
     border: 2px solid #ffec99;
     border-radius: 5px;
     background-color: #fff9db;
