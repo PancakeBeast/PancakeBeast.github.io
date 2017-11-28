@@ -17,15 +17,12 @@ function setup() {
         let info = snapshot.val();
         divListe.innerHTML += `
         <div>
-        <h4>Kunde nr ${kundenr}</h4></div>
-        <div>
+        <h4>Kunde nr ${kundenr}</h4>
         <ul>
-        <li>Capital: ${}</li>
-        <li>${} ${}</li>
        
-        <li>${info.fornavn} ${info.etternavn}</li>  
-        <li>${info.epost}</li>
-        <li>${info.mobil}</li>
+        <li>${info.fornavn} ${info.etternavn}
+        <li>Epost : ${info.epost}
+        <li>Mobil ${info.mobil}
         </ul>
         </div>  
         `;
