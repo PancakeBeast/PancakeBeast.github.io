@@ -1,46 +1,130 @@
+body {
+    overflow: hidden;
+}
+
 #sky {
-width: 100%;
-height: 50%;
-display: grid;
-grid-template-columns: repeat(13, 1fr);
-grid-gap: 40px;
-grid-auto-rows: minmax(40px, auto);
-}
- 
-.wrapper {
+    width: 100%;
+    height: 50%;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-gap: 40px;
-    grid-auto-rows: minmax(100px, auto);
-}
+    grid-auto-rows: minmax(40px, auto);
+  }
+  
+  .star {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFD2;
+    border-radius: 50%;
+    animation: blink 1s alternate linear infinite;
+  }
 
-.star {
-width: 10px;
-height: 10px;
-background-color: yellow;
-position: absolute;
-}
+  @keyframes blink {
+      0% {
+          background-color: rgb(233, 233, 10);   
+          width: 10px;  
+          height: 10px;
+    }
+      100% {
+          background-color: rgb(247, 247, 247);   
+          width: 2px;
+          height: 2px; 
+        }
+  }
 
-#snow {
-    width:10em;
-    height:20em;
-    background-image: url("snow.jpg");
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position-y: 0px;
-}
+  #canon {
+      position: absolute;
+      left: 20px;
+      bottom: 400px;
+      width: 200px;
+      height:800px;
+      background-image: url(canon.png);
+      background-size: 120px;
+      background-repeat: no-repeat;
+      z-index: 99999;
+      
+  }
+  
+  #snow {
+      position: relative;
+      width: 100%;
+      height: 100em;
+      background-image: url("snow-hills.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+  
+  #santa {
+      position: absolute;
+      left: -250px;
+      top:50px;
+      width: 250px;
+      height: 180px;
+      animation: drive 5s 1s linear infinite; 
+      background-image: url("santa.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 0px;
+  }
+  
+  @keyframes drive {
+      0% { left: -50vw; }
+     100% { left: 150vw; } 
+  }
+  
+  .pakke {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 8px;
+      height: 30px;
+      background-color: red;
+      border-left: solid green 21px;
+      border-right: solid green 21px;
+      animation: drop 1s ease-in-out;
+      animation-fill-mode: forwards;
+  }
+  @keyframes drop {
+    0% { top: 100px;    }
+    100% { top: 80vh;     }
+  }
+  
+  @keyframes dale {
+    0% { top: 0px;    }
+    100% { top: 90vh;     }
+  }
+.powder,
+  .snow {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: white;
+      animation: dale 5s linear infinite;
+      animation-fill-mode: forwards;
+  }
+  .powder {
+      top: 300px;
+      animation: fyke 5s linear infinite;
+  }
 
-#santa {
-    position: absolute;
-    left: -200px;
-    top: 50px;
-    width: 50px;
-    height: 20px;
-    background-color: red;
-    animation: drive 3s alternate; infinite;
-}
 
-@keyframes drive{
-    0% { left: -200px; }
-    100% { left: 120% }
-}
+  @keyframes fyke {
+    0% { left: 120px;   top:  450px;    }
+    10% { left: 350px;   top: 300px;    }
+    20% { left: 520px;   top: 200px;    }
+    30% { left: 690px;   top: 150px;    }
+    40% { left: 880px;   top: 120px;    }
+    50% { left: 1020px;   top: 180px;    }
+    60% { left: 1120px;   top: 230px;    }
+    70% { left: 1180px;   top: 280px;    }
+    80% { left: 1230px;   top: 350px;    }
+    85% { left: 1280px;   top: 380px;    }
+    90% { left: 1320px;   top: 420px;    }
+   100% { left: 1380px;   top: 450px;    }
+ }
