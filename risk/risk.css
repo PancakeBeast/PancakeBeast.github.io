@@ -1,0 +1,35 @@
+.box
+{
+    text-transform: uppercase;
+    color: salmon;
+    text-align: center;
+    font-size: 1.1em;
+	position: relative;
+    width: 200px;
+    height: 2em;
+	padding: 5px;
+    margin: 1em;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box:before, .box:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	transform: skew(-5deg) rotate(-5deg);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box:after
+{
+	left: auto;
+	right: 12px;
+	transform: skew(5deg) rotate(5deg);
+}
