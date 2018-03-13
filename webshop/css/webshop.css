@@ -1,0 +1,119 @@
+               
+               
+#meny a:hover{
+font-size: 140%;
+transition: 1.2s;
+color: pink;
+}
+    #bakgrunn { 
+    position: absolute;
+    background:#034f84; 
+    }
+    #meny a,#innhold a, #ad a, #bunn a {
+    color: #FFFFFF;
+    } 
+    a:hover {
+    color: palevioletred; 
+    }
+
+tr, td, th {
+border: 2px solid black;
+
+}
+#tittel {
+position: fixed;
+top: 0%;
+left: 0%;
+padding-left:15px; 
+border-width: 0;
+margin: 0;
+border-bottom: 3px solid rgb(190, 214, 247);
+    background: #524632;                                         
+width: 100%;
+z-index: 10000;
+
+}
+
+#meny {
+    text-align: absolute;
+    background: #C3C49E;
+    position: fixed;
+    left: 2%;
+    bottom: 31%;
+    width: 20%;
+    height: 50%;
+    overflow: auto;
+    }
+    #innhold  { 
+    position: absolute;
+    left: 27%;
+    top: 19%;
+    width: 71%;
+    height: 150%; /*bakgrunnHEIGHT + top for innhold*2*/
+    background: rgb(197, 197, 226);   
+    }
+    
+    #bunn {  
+    position: fixed;    
+    left: 2%;
+    bottom: 6.5%;
+    width: 20%;
+    height: 20.7%;
+    background:#8F7E4F 
+    
+ }
+   h3{
+      padding-left: 10px;
+   }
+  #bakgrunn {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: calc(150% + (2*19%));
+      background: #DEDBD8;
+  }
+   table {
+border: solid 2px gray;
+border-collapse: collapse;
+}
+
+innhold { 
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; 
+justify-content: space-around;
+} 
+
+img:hover {
+transition: 0.8s;
+width: 300px;
+height: 300px;   
+}
+
+img {
+padding-left: 11px;
+padding-bottom: 21px;
+}
+
+#bunn:hover, text {
+    transition: 1s;
+    font-size: 102.5%;
+   color: lightblue;
+}
+ 
+html,body {
+    margin: 0;
+}
+
+
+a:link {
+    text-decoration: pink
+}
+
+#tittel:hover, text {
+transition:  1s;
+font-size: 104.5%;
+color: lightblue;
+}
+
+
