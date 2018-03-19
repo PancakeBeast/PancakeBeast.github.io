@@ -1,0 +1,37 @@
+ html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(rgb(0, 139, 139), rgb(0, 0, 139));
+ }
+
+ div {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    border: 3px solid black;
+    left: calc((100% - 20% - 2 * 3px) / 2 - 2%);
+    top: calc((100% - 40% - 2 * 3px) / 2 - 2%);
+    background: darkcyan;
+    border-radius: 15%;
+    padding-left: 2%;
+    padding-top: 2%;
+    margin: 0;
+ }
+    #buy {
+        animation: buy 5s;  
+        animation-iteration-count: infinite;
+        background-image: url(../bilder/buyy.png);
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100px;  
+    }
+   
+ @keyframes buy {
+     0%   {left:27.5%; top: 80%;}
+     25%  {left:65%;   top: 80%;}
+     50%  {left:65%;   top: 10%;}
+     75%  {left:27.5%; top: 10%;}
+     100% {left:27.5%; top: 78%;}
+ }
