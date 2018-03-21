@@ -10,5 +10,16 @@
 article {
     width: 40%;
 }
+#pancake {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#pankace {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
 
 
