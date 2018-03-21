@@ -1,0 +1,25 @@
+#bakgrunn {
+    position: absolute;
+    background-color: antiquewhite;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+article {
+    width: 40%;
+}
+#pancake {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#pankace {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+

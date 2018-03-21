@@ -1,10 +1,14 @@
                
-               
+  
 #meny a:hover{
 font-size: 140%;
-transition: 1.2s;
 color: pink;
 }
+
+#meny, a {
+    transition: 1.2s;
+}
+
     #bakgrunn { 
     position: absolute;
     background:#034f84; 
@@ -21,6 +25,7 @@ border: 2px solid black;
 
 }
 #tittel {
+color: snow;
 position: fixed;
 top: 0%;
 left: 0%;
@@ -32,6 +37,16 @@ border-bottom: 3px solid rgb(190, 214, 247);
 width: 100%;
 z-index: 10000;
 
+}
+
+#sok {
+    position: fixed;
+    top: 4%;
+    right: 5%;
+    width: 10%;
+    height: 3%;
+    font-size: 100%;
+    text-align: right;
 }
 
 #meny {
@@ -84,23 +99,28 @@ flex-wrap: wrap;
 justify-content: space-around;
 } 
 
-img:hover {
-transition: 0.8s;
+innhold, img:hover {
 width: 300px;
-height: 300px;   
+height: 300px; 
+background: rgb(179, 179, 221);  
 }
 
-img {
+innhold, img {
+transition: 1.4s;
 padding-left: 11px;
 padding-bottom: 21px;
 }
 
 #bunn:hover, text {
-    transition: 1s;
-    font-size: 102.5%;
+    background-color: rgb(60, 105, 134);
    color: lightblue;
 }
+
+#bunn, text {
+    transition: 1s;
+}
  
+
 html,body {
     margin: 0;
 }
@@ -111,9 +131,16 @@ a:link {
 }
 
 #tittel:hover, text {
-transition:  1s;
 font-size: 104.5%;
 color: lightblue;
 }
+
+#tittel, text {
+  transition: 1s;
+}
+
+
+
+
 
 

@@ -5,9 +5,10 @@
         <title>PancakeBeast Webshop</title>
         <link rel="stylesheet" href="../webshop/css/webshop.css">
         <meta charset="UTF-8">
-        <script src="webshop.js"></script>
+        <script src="js/webshop.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
         <title>PancakeBeast Webshop</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../bilder/favicon.ico">
 </head>
 
 <body>
@@ -17,9 +18,16 @@
 
 
         <div id="tittel">
-                <h1> PancakeBeast Webshop </h1>
-               
-                
+                <header>
+                        <h1> PancakeBeast Webshop </h1>
+                </header>
+
+                <div id="sok">
+                        <input type="text" placeholder="søk" id="find">
+                </div>
+
+                <div id="resultat"></div>
+
         </div>
 
         <div id="meny">
@@ -28,31 +36,47 @@
                 </header>
                 <p>
                         <article>
-                        <h5> Welcome to PancakeBeast Webshop page! Here you can find great equipment, low prices. Please click
-                                the links below for more information. Please click on the pictures to buy the prefered product,
-                                where you will find information to order it. Have a good day! </h5>
+                                <h5> Welcome to PancakeBeast Webshop page! Here you can find great equipment, low prices. Please
+                                        click the links below for more information. Please click on the pictures to buy the
+                                        prefered product, where you will find information to order it. Have a good day! </h5>
                         </article>
                 </p>
                 <ul>
+                        <li>
+                                <a href="../webshop/html/cpu.html" style="text-decoration:none"> CPU </a>
+                        </li>
 
                         <li>
                                 <a href="../webshop/html/ram.html" style="text-decoration:none"> RAM </a>
                         </li>
-                        <li>
-                                <a href="../webshop/html/harddisk.html" style="text-decoration:none"> Harddisk </a>
-                        </li>
-                        <li>
-                                <a href="../webshop/html/cpu.html" style="text-decoration:none"> CPU </a>
-                        </li>
+
                         <li>
                                 <a href="../webshop/html/gpu.html" style="text-decoration:none"> GPU </a>
                         </li>
-                </ul>               
+
+                        <li>
+                                <a href="../webshop/html/harddisk.html" style="text-decoration:none"> Harddisk </a>
+                        </li>
+
+                        <li>
+                                <a href="../webshop/html/omprosjektet.html" style="text-decoration:none"> Om Prosjektet </a>
+                        </li>
+
+                </ul>
+                <p></p>
+                <br>
+                <h2>BEWARE!</h2>
+                <h5>This site is not safe! This is due to no protection from hackers who tries to steal user information. This
+                        webshop does not have a server which treats requests to get information. To hinder this we must set
+                        up rules which does not allow this to happen, or just use a server. But still! Please buy some overpriced
+                        PC-products :DD</h5>
         </div>
 
         <div id="innhold">
 
-                <h2>This week's discounts: </h2>
+                <header>
+                        <h2>This week's discounts: </h2>
+                </header>
                 <a href="../webshop/html/kjop.html">
                         <img src="bilder/256GB.jpg" height="260px" width="260px" alt="Harddisk 256GB SSD"> </a>
 
@@ -83,7 +107,7 @@
                 <ul>
 
                         <li>
-                                <a href=".html" style="text-decoration:none"> PancakeBeast Fan page A/S </a>
+                                <a href="../../PB fanpage/nettsted.html" style="text-decoration:none"> PancakeBeast Fan page A/S </a>
                         </li>
 
                         <li>
@@ -99,6 +123,8 @@
                         <li>
                                 <a href="../webshop/html/luben.html" style="text-decoration:none"> Lille Lubens syltetøyfabrikk A/S </a>
                         </li>
+
+                        
 
 
         </div>
